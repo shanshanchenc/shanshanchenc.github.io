@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+  	{% include header.html %}
+
+  	<div class="mobileSiteTitle">
+		<a href="index.html" >
+			<h3>CHEN SHANSHAN
+			<br>
+			/ 陳 珊珊</h3></a>
+	</div>		
+	<div id="headerWrapper">
+		<div id="siteTitle">
+			<a href="index.html">
+				<h3>CHEN SHANSHAN</h3>
+				<br>
+				<p>/ 陳 珊珊</p></a>
+		</div>
+		
+		<div class="mainNav">
+			<ul>
+				<br>
+				<br>
+				<li><a href="designpage.html"><h4>design/设计</h4></li></a>
+					<div id="subMenu">
+						<li><a href="design-roskiworks.html"><h5>roski works</h5></li></a>
+						<li><a href="design-graphics.html"><h5>graphics</h5></li></a>
+					</div>	
+			</ul>
+		</div>	
+	</div>
+
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+
+</html>

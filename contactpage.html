@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="mobileSiteTitle">
+	<a href="index.html">
+		<h3>CHEN SHANSHAN
+		<br>
+		/ 陳 珊珊</h3></a>
+</div>	
+
+<div id="canvas-contact">
+	<div id="headerWrapper">
+		<div id="siteTitle" class="animsition-overlay" data-animsition-overlay="true">
+			<a href="index.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-left" data-animsition-out-duration="500">
+				<h3>CHEN SHANSHAN</h3>
+				<br>
+				<p>/ 陳 珊珊</p></a>
+		</div>
+		
+	</div>	
+	<div id="gallery-contact">
+		<div id="gallery-content">
+			<center><p>shanshan.chenc@gmail.com</p></center>
+			<br>
+			<center><p>+1 323 633 3374</p></center>
+			<br>
+			<center><p>+86 182 6780 5822</p></center>
+			<br>
+			<div id="contact-bar">
+				<a href="mailto:shanshan.chenc@gmail.com"><img src="img/email.png" width="30px" id="contact-logo"></a> 
+    			<a href="http://instagram.com/shanshan.sss"><img src="img/instagramlogo.png" width="30px" id="contact-logo"></a>  
+				</div>
+			</div>		
+	</div>			
+		
+</div>
+
+<script>
+	$(document).ready(function() {
+			$(".animsition-overlay").animsition({
+				inClass: 'overlay-slide-in-left',
+			outClass: 'overlay-slide-out-right',
+			inDuration: 1500,
+			outDuration: 800,
+			linkElement: '.animsition-link',
+			// e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+
+		    transition: function(url){ window.location.href = url; }
+		});
+	});
+</script>	
