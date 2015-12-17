@@ -13,24 +13,42 @@
 			/ 陳 珊珊</h3></a>
 	</div>
 	<div id="headerWrapper">
-		<div id="siteTitle">
-			<a href="index.html">
+		<div id="siteTitle" data-animsition-overlay="true">
+			<a href="index.html" class="animsition-link" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="500">
 				<h3>CHEN SHANSHAN</h3>
 				<br>
-				<p>/ 陳 珊珊</p></a>
+				<p>/ 陳 珊珊</p>
+			</a>
 		</div>
 		<div class="mainNav">
 			<ul>
-				<li><a href="photographypage.html"><h4>photography/摄影</h4></a></li>
-					<div id="subMenu">
-						<li><a href="photography-roskiworks.html"><h5>roski works</h5></a></li>
-						<li><a href="photography-personalworks.html"><h5>personal works</h5></li></a>
-					</div>	
+				<li>
+					<a href="photographypage.html"><h4>photography/摄影</h4></a>
+				</li>
+				<div id="subMenu">
+					<li><a href="photography-roskiworks.html"><h5>roski works</h5></a></li>
+					<li><a href="photography-personalworks.html"><h5>personal works</h5></li></a>
+				</div>	
 			</ul>
 		</div>	
 	</div>
 
     {{ content }}
+
+    <script>
+		$(document).ready(function() {
+			$(".animsition-overlay").animsition({
+				inClass: 'overlay-slide-in-top',
+				outClass: 'overlay-slide-out-bottom',
+				inDuration: 1500,
+				outDuration: 800,
+				linkElement: '.animsition-link',
+				// e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+
+			    transition: function(url){ window.location.href = url; }
+			});
+		});
+	</script>
 
     {% include footer.html %}
   </body>

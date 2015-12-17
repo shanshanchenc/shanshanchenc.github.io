@@ -163,17 +163,6 @@ layout: photography
 	</div>
 </nav>
 
-<script>
-	$(document).ready(function() {
-			$(".animsition-overlay").animsition({
-				inClass: 'overlay-slide-in-top',
-			outClass: 'overlay-slide-out-bottom',
-			inDuration: 1500,
-			outDuration: 800,
-			linkElement: '.animsition-link',
-			// e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
-
-		    transition: function(url){ window.location.href = url; }
-		});
-	});
+<script type="text/javascript">
+	$("#siteTitle").addClass("animsition-overlay");
 </script>
